@@ -1,0 +1,134 @@
+body {
+    margin: 0%;
+    background-color: whitesmoke;
+    font-family: sans-serif Arial, Helvetica;
+}
+
+#mainHeading {
+    margin-left: 37%;
+}
+
+
+/* Navbar */
+
+navbar {
+    display: flex;
+    height: 50px;
+    background-color: #273036;
+}
+
+navbar ul li {
+    list-style: none;
+}
+
+navbar ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+navbar ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+input {
+    margin-top: 10px;
+    margin-left: 74%;
+    border-radius: 23px;
+    height: 20px;
+}
+
+#searchBtn {
+    height: 20px;
+    margin-top: 12px;
+    color: white;
+    background-color: black;
+}
+
+#searchBtn:hover {
+    color: black;
+    background-color: white;
+    border-radius: 3px solid black;
+    position: pointer;
+}
+
+
+/* form Design  */
+
+textarea {
+    display: block;
+    box-shadow: 6px 7px 5px 1px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 6px 7px 5px 1px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 6px 7px 5px 1px rgba(0, 0, 0, 0.71);
+}
+
+
+/* button Design */
+
+#addBtn {
+    position: relative;
+    margin-top: 3%;
+    padding: 10px;
+    background: #273036;
+    color: white;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+}
+
+#addBtn:hover {
+    text-decoration: underline solid 2px white;
+}
+
+.container {
+    /* border: 2px solid black; */
+    display: block;
+    height: 40%;
+    width: 67%;
+    margin: auto;
+}
+
+.container-2 {
+    /* border: 2px solid black; */
+    display: block;
+    height: 70%;
+    width: 67%;
+    margin: auto;
+}
+
+.noteSection {
+    display: inline-block;
+    height: 150px;
+    width: 130px;
+    padding: 9px;
+    margin: 4px;
+    border: 2px solid black;
+}
+
+.deleteBtn {
+    background: #273036;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.deleteBtn:hover {
+    text-decoration: underline solid 2px white;
+}
+
+@media (max-width:920px) {
+    #addTxt {
+        width: 300px;
+        display: flex;
+    }
+    #mainHeading {
+        margin-left: 7%;
+    }
+}
+
+@media (max-width:380px) {
+    #addTxt {
+        width: 150px;
+        display: flex;
+    }
+}
