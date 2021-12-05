@@ -31,11 +31,21 @@ navbar ul li a:hover {
     border-bottom: 2px solid white;
 }
 
-input {
+
+/* input {
     margin-top: 10px;
     margin-left: 74%;
-    border-radius: 23px;
-    height: 20px;
+    border-radius: 23px; 
+     height: 20px;
+ } */
+
+
+/* Adding noteTitle design */
+
+#noteTitle {
+    margin-left: 0%;
+    height: auto;
+    width: auto;
 }
 
 #searchBtn {
@@ -98,7 +108,7 @@ textarea {
 
 .noteSection {
     display: inline-block;
-    height: 150px;
+    height: auto;
     width: 130px;
     padding: 9px;
     margin: 4px;
