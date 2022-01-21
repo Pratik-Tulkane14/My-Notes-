@@ -1,11 +1,11 @@
 body {
     margin: 0%;
     background-color: whitesmoke;
-    font-family: sans-serif Arial, Helvetica;
 }
 
 #mainHeading {
     margin-left: 37%;
+    font-family: sans-serif Arial, Helvetica;
 }
 
 
@@ -13,7 +13,7 @@ body {
 
 navbar {
     display: flex;
-    height: 50px;
+    height: 3.1rem;
     background-color: #273036;
 }
 
@@ -24,20 +24,29 @@ navbar ul li {
 navbar ul li a {
     text-decoration: none;
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: sans-serif Arial, Helvetica;
 }
 
 navbar ul li a:hover {
     border-bottom: 2px solid white;
 }
+ navbar #searchTxt{
+    height: 0.9rem;
+    width: 8rem;
+    margin-top: 1rem;
+    margin-left: 49rem;
+}
+navbar #searchBtn{
+    background-color: #273036;
+    margin-top: 1rem;
+}
+#mainHeading{
+    font-weight: 100;
+    font-family: sans-serif Arial, Helvetica;
+}
 
-
-/* input {
-    margin-top: 10px;
-    margin-left: 74%;
-    border-radius: 23px; 
-     height: 20px;
- } */
 
 
 /* Adding noteTitle design */
@@ -46,13 +55,17 @@ navbar ul li a:hover {
     margin-left: 0%;
     height: auto;
     width: auto;
+    font-weight: 100;
+    font-family: sans-serif Arial, Helvetica;
 }
 
 #searchBtn {
-    height: 20px;
-    margin-top: 12px;
+    height: 1.25rem;
+    margin-top: 0.75rem;
     color: white;
     background-color: black;
+    font-weight: 100;
+    font-family: sans-serif Arial, Helvetica;
 }
 
 #searchBtn:hover {
@@ -70,6 +83,8 @@ textarea {
     box-shadow: 6px 7px 5px 1px rgba(0, 0, 0, 0.71);
     -webkit-box-shadow: 6px 7px 5px 1px rgba(0, 0, 0, 0.71);
     -moz-box-shadow: 6px 7px 5px 1px rgba(0, 0, 0, 0.71);
+    font-weight: 100;
+    font-family: sans-serif Arial, Helvetica;
 }
 
 
@@ -78,12 +93,15 @@ textarea {
 #addBtn {
     position: relative;
     margin-top: 3%;
-    padding: 10px;
+    padding: 0.62rem;
     background: #273036;
     color: white;
     margin-left: 1%;
     margin-bottom: 1%;
-    border-radius: 10px;
+    margin-top: 1rem;
+    border-radius: 0.625rem;
+    font-weight: 100;
+    font-family: sans-serif Arial, Helvetica;
 }
 
 #addBtn:hover {
@@ -91,54 +109,132 @@ textarea {
 }
 
 .container {
-    /* border: 2px solid black; */
     display: block;
     height: 40%;
     width: 67%;
     margin: auto;
 }
+.container h4{
+    font-weight: 300;
+    font-family: sans-serif Arial, Helvetica;
+}
 
 .container-2 {
-    /* border: 2px solid black; */
     display: block;
     height: 70%;
     width: 67%;
     margin: auto;
 }
+.container-2 h3{
+    font-weight: 300;
+}
 
 .noteSection {
     display: inline-block;
     height: auto;
-    width: 130px;
-    padding: 9px;
+    width: 8rem;
+    padding: 0.5rem;
     margin: 4px;
     border: 2px solid black;
+    font-weight: 100;
+    font-family: sans-serif Arial, Helvetica;
 }
 
 .deleteBtn {
     background: #273036;
     color: white;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    font-weight: 100;
+    font-family: sans-serif Arial, Helvetica;
 }
 
 .deleteBtn:hover {
     text-decoration: underline solid 2px white;
 }
-
-@media (max-width:920px) {
+@media (max-width:1530px) {
+    navbar #searchTxt{
+        margin-left: 40rem;
+    }
+    #addTxt{
+        width: 33rem;
+    }
+}
+@media (max-width:1330px) {
+    #addTxt{
+        width: 30rem;
+    }
+    navbar #searchTxt{
+        margin-left: 30rem;
+    }
+    
+}
+@media (max-width:1110px) {
+    navbar #searchTxt{
+        margin-left: 25rem;
+    }
+}
+@media (max-width:977px) {
     #addTxt {
-        width: 300px;
+        width: 18rem;
         display: flex;
     }
     #mainHeading {
-        margin-left: 7%;
+        margin-left: 19%;
+    }
+    navbar #searchTxt{
+        margin-left: 20rem;
     }
 }
-
+@media (max-width:870px) {
+    navbar #searchTxt{
+        margin-left: 15rem;
+    }
+    
+}
+@media (max-width:750px) {
+    navbar #searchTxt{
+        margin-left: 10rem;
+    }
+}
+@media (max-width:650px) {
+    navbar #searchTxt{
+        margin-left: 5rem;
+    }
+}
+@media (max-width:550px) {
+    navbar #searchTxt{
+        margin-left: 3rem;
+    }
+    #addTxt{
+        width: 12rem;
+    }
+}
+@media (max-width:500px) {
+    #addTxt{
+        width: 12rem;
+    }
+    navbar #searchTxt{
+        margin-left: 1rem;
+    }
+    #mainHeading {
+        margin-left: 10%;
+    }
+    navbar #searchTxt{
+        width: 5rem;
+    }
+}
 @media (max-width:380px) {
     #addTxt {
-        width: 150px;
+        width: 12rem;
         display: flex;
+    }
+    navbar #searchTxt{
+        margin-left: 1rem;
+    }
+}
+@media (max-width:435px) {
+    navbar #searchTxt{
+        margin-left: 0.5rem;
     }
 }

@@ -61,11 +61,19 @@ function deleteNote(index) {
 
 let search = document.getElementById("searchTxt");
 search.addEventListener("input", function() {
-    let inputVal = search.value;
-    console.log("HI", inputVal);
-    let noteCards = document.getElementsByClassName("noteCards");
-    Array.from(noteCards).forEach(function(element) {
-        let cardTxt = document.getElementsByTagName("p")[0].innerText;
+    let inputVal = search.value.toLowerCase();
+    // console.log('input event is fired ', inputVal);
+    
+    let noteSections = document.getElementsByClassName('noteSection');
+    Array.from(noteSections).forEach(function(element) {
+        let cardTxt = element.getElementsByTagName("p")[0].innerText;
+        if(cardTxt.includes(inputVal)){
+            element.style.display = "block";
+        }
+        else{
+            element.style.display = "none";
+
+        }
         console.log(cardTxt);
     })
 });
