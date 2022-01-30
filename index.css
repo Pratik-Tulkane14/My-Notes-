@@ -31,6 +31,7 @@ navbar ul li a {
 
 navbar ul li a:hover {
     border-bottom: 2px solid white;
+    cursor: pointer;
 }
  navbar #searchTxt{
     height: 0.9rem;
@@ -69,10 +70,11 @@ navbar #searchBtn{
 }
 
 #searchBtn:hover {
-    color: black;
-    background-color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgb(97, 92, 92);
     border-radius: 3px solid black;
     position: pointer;
+    cursor: pointer;
 }
 
 
@@ -106,6 +108,7 @@ textarea {
 
 #addBtn:hover {
     text-decoration: underline solid 2px white;
+    cursor: pointer;
 }
 
 .container {
@@ -134,10 +137,11 @@ textarea {
     height: auto;
     width: 8rem;
     padding: 0.5rem;
-    margin: 4px;
-    border: 2px solid black;
+    margin: 0.8rem;
+    border-radius: 0.9rem;
     font-weight: 100;
     font-family: sans-serif Arial, Helvetica;
+    box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.75);
 }
 
 .deleteBtn {
@@ -151,6 +155,7 @@ textarea {
 
 .deleteBtn:hover {
     text-decoration: underline solid 2px white;
+    cursor: pointer;
 }
 @media (max-width:1530px) {
     navbar #searchTxt{
